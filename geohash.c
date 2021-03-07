@@ -217,7 +217,7 @@ PHP_FUNCTION(geohash_encode)
     char *hash;
     hash = _geohash_encode(latitude, longitude, precision);
 
-    RETURN_STRING(hash, 0);
+    RETURN_STRING(hash);
 
     efree(hash);
 }
