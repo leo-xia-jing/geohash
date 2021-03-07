@@ -260,7 +260,7 @@ PHP_FUNCTION(geohash_neighbors)
     int i;
     array_init(return_value);
     for(i=0; i<len; i++) {
-        add_next_index_string(return_value, list[i], 1);
+        add_next_index_string(return_value, list[i]);
         efree(list[i]);
     }
     efree(list);
